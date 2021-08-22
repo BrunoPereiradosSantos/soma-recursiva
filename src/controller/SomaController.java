@@ -7,9 +7,9 @@ public class SomaController {
 	
 	public int soma(int numero) {
 		// se o numero for 1, retorna 1.
-		if(numero == 1) return 1;
-		//senão retorna o numero + soma do numero - 1; é quase parecido com a idea do fatorial, onde é necessário subtrair 1 para continuar a soma
-		// até a condição de parada.
+		if(numero < 1) return 0;
+		//senÃ£o retorna o numero + soma do numero - 1; Ã© quase parecido com a idea do fatorial, onde Ã© necessÃ¡rio subtrair 1 para continuar a soma
+		// atÃ© a condiÃ§Ã£o de parada.
 		else return numero + soma(numero - 1);
 	}
 }
